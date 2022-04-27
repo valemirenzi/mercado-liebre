@@ -13,13 +13,9 @@ header {
     width: 100%;
 }
 
-.banner {
-    margin-top: 190px;
-}
-
 .logo {
-    width: 200px;
-    margin-right: 10px;
+    width: 50%;
+    margin-right: 15px;
 }
 
 .main-header-top-bar {
@@ -28,42 +24,42 @@ header {
     align-items: center
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
+.banner {
+    margin-top: 157px;
 }
 
-div.top-header{
+.top-header{
     padding: 20px 20px 0px 20px;
 }
 
-header div.top-header p{
+.top-header p{
     text-align: center;
-    margin-top: 10px;
+    margin: 15px;
 }
 
-header div.logo {
-    padding: 10px;
-    width: 50%;
-}
-
-header .form .input {
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
-    border: 1px solid #000;
-    padding: 1px;
-    outline: none;
+    border-radius: 5px;
+}
+
+.form .input {
+    border: none;
+    padding: 5px;
+    color: #666;
+    width: 98%;
+    border-radius: 5px;
+}
+
+.form .submit {
+    border: none;
+    padding: 3px;
     color: #666;
 }
 
-header .form .submit {
-    background-color: #fff;
-    border: 1px solid #000;
-    padding: 1px;
-    color: #666;
-    width: 10%;
-}
-
-header .main-navbar {
+.main-navbar {
     display: none;
     font-size: 12px;
 }
@@ -78,7 +74,6 @@ header .main-navbar {
     padding: 5px 0px;;
 }
 
-
 div.burger-menu {
     text-align: center;
 }
@@ -89,14 +84,17 @@ div.burger-menu i{
     color: #fff;
     font-size: 20px;
     height: 40px;
-    margin: 10px 0px 20px 0px;
+    margin-bottom: 15px;
     padding: 10px;
     width: 40px;
-    cursor: pointer;
 }
 
 
 /* ---main--- */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
 
 main {
     margin: 0 auto;
@@ -182,7 +180,6 @@ main div article i{
 
 
 /* ---footer--- */
-
 footer {
     width: 100%;
 }
@@ -291,12 +288,18 @@ input {
     position: static;
 }
 
+.body-login {
+    background-color: #fff;
+}
+
 .form-login {
     max-width: 85%;
     margin: auto;
     padding: 10px;
     line-height: 30px;
     text-align: center;
+    background-color: #ebebeb;
+    border-radius: 5px;
 }
 
 .send-btn-login {
@@ -304,7 +307,7 @@ input {
     padding: 5px;
     width: 100%;
     background-color: rgb(52, 131, 250);
-    transition: all 400ms;
+    transition: all 450ms;
     color: #fff;
     margin: 10px 0;
     cursor: pointer;
@@ -321,12 +324,82 @@ input {
 /* ---media querys--- */
 
 @media (min-width: 361px) {
+    /* ---header--- */
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .top-header p {
+        text-align: center;
+        margin: 15px;
+    }
+
+    .main-header-top-bar {
+        width: 100%;
+    }
+    
+    .logo {
+        width: 45%;
+    }
+
+    .form {
+        width: 70%;
+    }
+
+    .copy-header p {
+        color: #222222;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 5px 5px 10px 5px;
+        font-size: 12px;
+    }
+
+    .banner {
+        margin-top: 105px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    /* --- productos --- */
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    article {
+        width: 48%;
+    }
+
     main article:hover {
         box-shadow: 0 0 10px rgb(100, 100, 100);
         transition: all 450ms;
         cursor: pointer;
     }
     
+    .descripcion {
+        display: block;
+        margin-top: 7px;
+        text-align: left;
+    }
+
     main article:hover .descripcion {
         transition: all 1s;
         opacity: 1;
@@ -337,96 +410,25 @@ input {
         transition: all 2s
     }
 
-    header {
-        padding: 20px;
-    }
-
-    .top-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    div.top-header{
-        padding: 20px;
-    }
-
-    article {
-        width: 48%;
-    }
-
-    .productos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .logo {
-        width: 250px;
-    }
-    
-    div .main-header-top-bar {
-        justify-content: flex-start;
-    }
-
-    header .main-navbar {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .main-navbar ul {
-        display: flex;
-    }
-
-    .main-navbar li {
-        margin: 0px 5px;
-    }
-
-    .main-navbar a {
-        font-size: 17px;
-    }
-
-    .copy-header {
-        max-width: none;
-        font-size: 18px;
-        font-weight: 600;
-        margin: 0;
-    }
-
-    .copy-header p {
-        color: #222222;
-    }
-
-    .main-navbar li {
-        margin: 10px;
-    }
-
-    .descripcion {
-        display: block;
-        margin-top: 7px;
-    }
-
-    div.burger-menu {
-        display: none;
-    }
-
-    .copyright {
-        font-size: 10px;
-    }
-
-    .form-registro {
-        max-width: 70%;
-    }
-
+    /* --- footer --- */
     .footer {
         display: flex;
+        justify-content: space-around;
     }
 
     .iconos-footer:hover i {
         color: rgb(52, 131, 250);
         transform: rotate(360deg);
         transition: all 2s;
-        
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+
+    /* --- registro & login --- */
+    .form-registro, .form-login {
+        max-width: 70%;
     }
 
     .send-btn-login, .send-btn, .cancel-btn {
@@ -436,35 +438,51 @@ input {
 }
 
 @media (min-width: 769px) {
-    article {
-        width: 23%;
+    /* --- header --- */
+    .top-header {
+        padding: 20px;
     }
 
     .logo {
         width: 250px;
     }
 
-    .main-navbar a {
-        font-size: 19px;
-    }
-
-    .main-navbar {
-        margin-top: 20px;
-    }
-
-    .main-navbar li {
-        margin: 10px;
-    }
-
     .copy-header p {
         font-size: 20px;
     }
 
+    .main-header-top-bar {
+        width: 75%;
+    }
+
+    .main-navbar a {
+        font-size: 19px;
+    }
+
+    .main-navbar li {
+        margin: 20px;
+    }
+
+    .form .input {
+        padding: 7px;
+    }
+    
+    .form .submit {
+        padding: 4px;
+    }
+
+    /* --- productos --- */
+    article {
+        width: 23%;
+    }
+
+    /* --- footer --- */
     .copyright {
         font-size: 12px;
     }
 
-    .form-registro {
+    /* --- registro & login --- */
+    .form-registro, .form-login {
         background-color: #ebebeb;
         max-width: 50%;
         margin: auto;

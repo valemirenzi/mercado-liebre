@@ -55,56 +55,57 @@ rel="stylesheet" />
 
     <section class="registro">
         <div class="form-registro">
-        <form action="/" method="POST" class="registro">
-        
-        <div>
-            <input type="text" name="nombre" id="nombre" class="more-width" placeholder="Nombre y apellido">
-        </div>
-
-        <div>
-            <input type="text" id="usuario" name="usuario" class="more-width" placeholder="Nombre de usuario">
-        </div>
-
-        <div>
-            <label for="nacimiento"> <strong>Fecha de nacimiento</strong> </label> 
-            <input class="more-width"  type="date" id="fecha" name="fecha">
-        </div>
-
-        <div>
-            <input type="text" id="domicilio" name="domicilio" class="more-width" placeholder="Domicilio">
-        </div>
-
-        <div>
-            <label for="perfil"> <strong>Perfil de usuario</strong> </label> 
-            <input type="radio" id="perfil" name="perfil" value="comprador"> Comprador
-            <input type="radio" id="perfil" name="perfil" value="vendedor"> Vendedor
-            </div>
-
-        <div>
-            <label for="intereses"> <strong>Intereses</strong> </label> 
-                <label value="electro"><input type="checkbox" id="intereses" name="intereses"> Electro</label> 
-                <label value="moda"><input type="checkbox" id="intereses" name="intereses"> Moda</label> 
-                <label value="jugueteria"><input type="checkbox" id="intereses" name="intereses"> Juguetería</label> 
-                <label value="vida-sana"><input type="checkbox" id="intereses" name="intereses"> Vida sana</label> 
-        </div>
-
-        <div>
-            <label for="foto">Foto de usuario</label>
-            <input class="profile-picture" type="file" id="foto" name="foto" accept=".jpg/ .jpeg/ .png">
-            </div>
-
-        <div>
-                <input type="password" id="contrasenia" name="contrasenia" class="more-width" placeholder="Contraseña">
+            <form action="/" method="POST" class="registro">
+            
+            <div>
+                <input type="text" name="nombre" id="nombre" class="more-width" placeholder="Nombre y apellido" required="">
             </div>
 
             <div>
-                <input type="password" id="confirmar-contrasenia" name="confirmar-contrasenia" class="more-width" placeholder="Confirmar contraseña">
+                <input type="text" id="usuario" name="usuario" class="more-width" placeholder="Nombre de usuario" required="">
             </div>
-        
-            <button type="submit" class="send-btn" href="/">Enviar</button> <br>
-            <button type="reset" class="cancel-btn">Cancelar</button>
 
-            </form>
+            <div>
+                <label for="nacimiento"> <strong>Fecha de nacimiento</strong> </label> 
+                <input class="more-width"  type="date" id="fecha" name="fecha" required="">
+            </div>
+
+            <div>
+                <input type="text" id="domicilio" name="domicilio" class="more-width" placeholder="Domicilio" required="">
+            </div>
+
+            <div>
+                <label for="perfil"> <strong>Perfil de usuario</strong> </label> 
+                <input type="radio" id="perfil" name="perfil" value="comprador" required=""> Comprador
+                <input type="radio" id="perfil" name="perfil" value="vendedor" required=""> Vendedor
+                </div>
+
+            <div>
+                <label for="intereses"> <strong>Intereses</strong> </label> 
+                    <label value="electro"><input type="checkbox" id="intereses" name="intereses"> Electro</label> 
+                    <label value="moda"><input type="checkbox" id="intereses" name="intereses"> Moda</label> 
+                    <label value="jugueteria"><input type="checkbox" id="intereses" name="intereses"> Juguetería</label> 
+                    <label value="vida-sana"><input type="checkbox" id="intereses" name="intereses"> Vida sana</label> 
+            </div>
+
+            <div>
+                <label for="foto">Foto de usuario</label>
+                <input class="profile-picture" type="file" id="foto" name="foto" accept=".jpg/ .jpeg/ .png">
+                </div>
+
+            <div>
+                    <input type="password" id="contrasenia" name="contrasenia" class="more-width" placeholder="Contraseña" required="">
+                </div>
+
+                <div>
+                    <input type="password" id="confirmar-contrasenia" name="confirmar-contrasenia" class="more-width" placeholder="Confirmar contraseña" required="">
+                </div>
+            
+                <button type="submit" class="send-btn" href="/">Registrarme</button> <br>
+                <button type="reset" class="cancel-btn">Cancelar</button>
+
+                </form>
+            </div>
         </div>
     </section>
 
